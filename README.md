@@ -8,12 +8,6 @@ Diffusion Transformers (DiTs) trained on MNIST dataset
 
 ## 模型结构
 
-该项目是基于我此前开源的3个项目的认知之上来构建的，它们分别是：
-
-* [transformer模型复现](https://github.com/owenliang/pytorch-transformer)
-* [diffusion模型复现](https://github.com/owenliang/pytorch-diffusion)
-* [vits模型复现](https://github.com/owenliang/mnist-vit)
-
 DiT模型本质上是diffusion扩散模型，只是将图像部分的unet卷积网络换成了vits网络，而vits网络则基于transformer处理图像。
 
 在diffusion复现模型中，我也已经尝试过使用cross-attention结构引导图像生成的数字，而在DiT模型中我采用adaLN-Zero方式引导图像生成，这是DiT模型与此前3个模型之间的关系。
